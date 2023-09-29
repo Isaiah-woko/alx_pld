@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#add all changes to the staging area
+git add .
+
+#prompt for commit message
+echo "Enter your commit message"
+read commit_message
+
+#commit changes with provided message
+git commit -m $commit_message
+
+#push changes
+git push
